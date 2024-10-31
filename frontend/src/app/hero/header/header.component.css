@@ -28,6 +28,8 @@ header {
     border: 1px solid #3DCFB6;
     border-radius: 100px;
     transition: border-color 0.3s ease;
+    position: relative;
+    z-index: 10000;
 }
 
 .language-container:hover {
@@ -95,6 +97,8 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
+    z-index: 10000;
 }
 
 .right-container span:first-child {
@@ -122,6 +126,7 @@ header {
     width: 33px;
     display: inline-block;
     transform: rotate(90deg) !important;
+    cursor: pointer;
 }
 
 .right-container span:first-child,
