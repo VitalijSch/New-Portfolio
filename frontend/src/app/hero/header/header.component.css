@@ -1,0 +1,138 @@
+.header-background-container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 13.56%, rgba(0, 0, 0, 0.6) 84.01%);
+}
+
+header {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Karla';
+    padding: 25px 96px;
+    color: white;
+}
+
+.left-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 35px 0;
+}
+
+.language-container {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #3DCFB6;
+    border-radius: 100px;
+    transition: border-color 0.3s ease;
+}
+
+.language-container:hover {
+    border-color: var(--version-2-white, #FFFFFF);
+}
+
+.language-container:hover .language {
+    color: #3DCFB6;
+}
+
+.language {
+    height: 100%;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #3DCFB680;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.active-language {
+    height: 29px;
+    font-weight: 700;
+    background-color: #3DCFB6;
+    color: white !important;
+    border-radius: 100px;
+    margin: 0 -1px;
+}
+
+.left-container span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26.24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.left-container span:active {
+    color: #3DCFB6;
+}
+
+.left-container span::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3DCFB6;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.left-container span:hover::after {
+    opacity: 1;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right-container span:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.right-container span:last-child {
+    font-size: 35px;
+    line-height: 35px;
+    color: white;
+    -webkit-text-stroke: 1px white;
+}
+
+.right-container span:first-child,
+.right-container span:first-child span {
+    font-size: 50px;
+    color: #3DCFB6;
+    -webkit-text-stroke: 1px #3DCFB6;
+    transform: rotate(90deg);
+}
+
+.right-container span:first-child span {
+    height: unset !important;
+    width: 33px;
+    display: inline-block;
+    transform: rotate(90deg) !important;
+}
+
+.right-container span:first-child,
+.right-container span:first-child span,
+.right-container span:last-child {
+    font-weight: 900;
+    transition: color 0.5s ease;
+}
+
+.right-container:hover span:first-child,
+.right-container:hover span:last-child,
+.right-container:hover span:first-child span {
+    color: transparent;
+}

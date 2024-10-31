@@ -1,0 +1,21 @@
+<div class="header-background-container">
+    <header>
+        <div class="left-container">
+            <div (click)="switchLanguage()" class="language-container">
+                <div [ngStyle]="{'padding-right': !toggleLanguage ? '12px' : '8px'}"
+                    [ngClass]="{'active-language': !toggleLanguage}" class="en-container language">EN
+                </div>
+                <div [ngStyle]="{'padding-left': toggleLanguage ? '12px' : '8px'}"
+                    [ngClass]="{'active-language': toggleLanguage}" class="de-container language">DE
+                </div>
+            </div>
+            <span>About me</span>
+            <span>Skills</span>
+            <span>Projects</span>
+        </div>
+        <div class="right-container">
+            <span><span>V</span>S</span>
+            <span>Vitalij<br>Schwab</span>
+        </div>
+    </header>
+</div>
