@@ -45,5 +45,16 @@
             </a>
             <div class="line-container"></div>
         </div>
+        <div class="slider-container">
+            <ngx-fast-marquee [speed]="70" direction="left" [pauseOnHover]="true" [autoFill]="true"
+                [maskPercentage]="40" updated>
+                <div class="slider-track">
+                    @for (content of sliderContent; track $index; let last = $last) {
+                    <div class="circle-container"></div>
+                    <span [ngStyle]="{'padding-right': last ? '28px' : '0'}">{{content}}</span>
+                    }
+                </div>
+            </ngx-fast-marquee>
+        </div>
     </div>
 </section>
