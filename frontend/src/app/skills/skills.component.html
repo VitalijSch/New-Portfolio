@@ -21,7 +21,7 @@
         <div class="right-container">
             @for (technology of technologies; track $index; let last = $last) {
             <div class="technology-container">
-                <img src="./assets/images/technologies_{{$index}}.svg" alt="technology">
+                <img src="./assets/images/technologies/technologies_{{$index}}.svg" alt="technology">
                 <span [class.change-color]="last">{{technology}}</span>
                 @if(last) {
                 <div class="growth-mindset-container">
