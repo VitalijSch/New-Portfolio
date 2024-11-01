@@ -1,0 +1,119 @@
+.about-me-background-container {
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboute-me-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 96px 0 96px;
+    color: white;
+    display: flex;
+    gap: 96px;
+    position: relative;
+}
+
+.left-container {
+    max-width: 568px;
+    width: 100%;
+    max-height: 568px;
+    height: 100%;
+    margin-bottom: 140px;
+}
+
+.left-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.diagonal-stripes {
+    position: absolute;
+    top: 126px;
+    left: 60px;
+    width: 568px;
+    height: 568px;
+    background-color: #1C1C1C;
+    background-image: repeating-linear-gradient(45deg, #3DCFB6, #3DCFB6 1px, transparent 2px, transparent 20px);
+    transform: scale(0);
+    transform-origin: top right;
+    transition: transform 0.2s ease-in-out;
+}
+
+.left-container:hover .diagonal-stripes {
+    transform: scale(1)
+}
+
+.right-container {
+    margin-top: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.right-container span {
+    font-family: 'Karla';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.06px;
+    color: #3DCFB6;
+}
+
+.description-container {
+    max-width: 568px;
+    width: 100%;
+    padding: 32px;
+    background-color: #3DCFB61A;
+    border: 1px solid #3DCFB6;
+    border-radius: 30px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+}
+
+.description-container h2 {
+    font-family: 'Fira Code';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: #3DCFB6;
+    margin-bottom: 40px;
+}
+
+.description-container p {
+    font-family: 'Karla';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+}
+
+.m-b-32 {
+    margin-bottom: 32px;
+}
+
+.key-strengths-container {
+    display: flex;
+    gap: 24px;
+}
+
+.key-strengths-container svg {
+    width: 32px;
+    height: 32px;
+}
+
+.key-strengths-container p {
+    cursor: default;
+    flex: 1;
+    margin-bottom: 16px;
+    color: #FFFFFFCC;
+}
+
+.key-strengths-container p:hover {
+    color: white;
+}

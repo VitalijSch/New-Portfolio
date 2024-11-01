@@ -14,7 +14,7 @@ export class HeroComponent {
   public sliderContent: string[] = [
     'Available for remote work',
     'Frontend Developer',
-    'Based in Lahr',
+    'Based in Lahr/Schwarzwald',
     'open to work',
   ];
 }

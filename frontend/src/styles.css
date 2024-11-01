@@ -8,6 +8,46 @@ body {
     height: 100vh;
 }
 
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.button-container button {
+    padding: 13px 24px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.5s ease;
+}
+
+.button-container button:hover {
+    border-color: #3DCFB6;
+}
+
+.button-container button span {
+    font-family: 'Karla';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: white;
+    display: inline-block;
+    transition: transform 1s ease, color 0.5s ease;
+}
+
+.button-container button:not(:hover) span {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.button-container button:hover span {
+    transform: translateX(-150%);
+    color: #3DCFB6;
+}
+
 /* karla-200 - latin */
 @font-face {
     font-display: swap;
