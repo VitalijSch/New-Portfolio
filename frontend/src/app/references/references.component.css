@@ -28,7 +28,7 @@
     color: #3DCFB6;
 }
 
-.reviews-background-container {
+.carousel-background-container {
     width: 100%;
     height: 276px;
     background: linear-gradient(to right, #1C1C1C 1%, transparent 20%, transparent 40%, transparent 60%, transparent 80%, #1C1C1C 100%);
@@ -36,7 +36,7 @@
     z-index: 1;
 }
 
-.reviews-container {
+.carousel-container {
     height: 276px;
     display: flex;
     justify-content: center;
@@ -44,14 +44,21 @@
     gap: 60px;
     position: relative;
     z-index: 0;
+    transition: transform 0.5s ease;
 }
 
-.reviews-container svg {
+.carousel-container svg {
     position: absolute;
     top: -8px;
     left: 684px;
     z-index: 2;
     transform: translateX(-50%);
+}
+
+.carousel {
+    height: 100%;
+    display: flex;
+    gap: 60px;
 }
 
 .reference-container {
@@ -64,7 +71,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 1s ease-in-out;
+    transition: transform 0.5s ease;
 }
 
 .reference-container span {

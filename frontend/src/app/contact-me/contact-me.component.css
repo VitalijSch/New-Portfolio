@@ -1,0 +1,170 @@
+.contact-me-background-container {
+    background-color: #1C1C1C;
+}
+
+.contact-me-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 96px 0 96px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-container {
+    max-width: 568px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-container .first-span {
+    font-family: 'Karla';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.06px;
+    color: #3DCFB6;
+    margin-bottom: 20px;
+}
+
+.left-container h2 {
+    font-family: 'Fira Code';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.03em;
+    color: #3DCFB6;
+    margin-bottom: 40px;
+}
+
+.left-container .second-span {
+    font-family: 'Fira Code';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #3DCFB6;
+    margin-bottom: 16px;
+}
+
+.left-container p,
+.left-container .third-span {
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+.left-container .third-span {
+    margin-top: 16px;
+}
+
+.left-container .third-span span {
+    color: #3DCFB6;
+    font-weight: 700;
+}
+
+form {
+    max-width: 616px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid #3DCFB680;
+}
+
+.input-container label {
+    font-family: 'Fira Code';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: #3DCFB6;
+}
+
+.input-container input {
+    background-color: transparent;
+    border: unset;
+    outline: unset;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: white;
+    cursor: pointer;
+}
+
+.input-container:nth-of-type(3) {
+    border-bottom: 1px solid #3DCFB680;
+    margin-bottom: 32px;
+}
+
+.input-container input::placeholder {
+    color: #FFFFFFCC;
+}
+
+.input-container input:hover::placeholder {
+    color: white;
+}
+
+.input-container input:focus::placeholder {
+    color: transparent;
+}
+
+.privacy-policy-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.privacy-policy-container .checkbox {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #3DCFB6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.privacy-policy-container .checkbox:hover {
+    background-color: #3DCFB64D;
+    filter: drop-shadow(0px 0px 15px #3DCFB6);
+}
+
+.privacy-policy-container p,
+.privacy-policy-container span {
+    font-family: 'Karla';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.privacy-policy-container span {
+    color: #3DCFB6;
+    cursor: pointer;
+}
+
+.privacy-policy-container span:hover {
+    color: white;
+}
+
+form button {
+    width: fit-content;
+    padding: 12px 24px;
+    border: 1px solid #FFFFFF80;
+    border-radius: 100px;
+    font-family: 'Karla';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    background-color: transparent;
+    color: #FFFFFFCC;
+    align-self: center;
+    cursor: pointer;
+}
