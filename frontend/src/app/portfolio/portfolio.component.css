@@ -97,6 +97,7 @@
 .project-img-container {
     position: absolute;
     right: -367px;
+    pointer-events: none;
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -120,7 +121,6 @@
 
 .img-stripes-container img {
     width: 295px;
-    height: 192px;
     border-radius: 16px;
     position: relative;
     z-index: 1;

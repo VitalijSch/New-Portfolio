@@ -1,0 +1,122 @@
+.references-background-container {
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.references-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 96px 0 96px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    position: relative;
+    overflow-x: clip;
+}
+
+.references-container h2 {
+    font-family: 'Fira Code';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.98px;
+    color: #3DCFB6;
+}
+
+.reviews-background-container {
+    width: 100%;
+    height: 276px;
+    background: linear-gradient(to right, #1C1C1C 1%, transparent 20%, transparent 40%, transparent 60%, transparent 80%, #1C1C1C 100%);
+    position: absolute;
+    z-index: 1;
+}
+
+.reviews-container {
+    height: 276px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    z-index: 0;
+}
+
+.reviews-container svg {
+    position: absolute;
+    top: -8px;
+    left: 684px;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.reference-container {
+    width: 624px;
+    height: 100%;
+    padding: 45px 40px;
+    background-color: #3DCFB64D;
+    border: 1px solid #3DCFB6;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 1s ease-in-out;
+}
+
+.reference-container span {
+    font-family: 'Karla';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.from-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.from-container .line-container {
+    flex: 1;
+    height: 1px;
+    background-color: white;
+}
+
+.from-container span {
+    width: fit-content;
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation-container .dot-container {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.navigation-container svg {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.navigation-container svg:hover path {
+    fill: #3DCFB6;
+}
+
+.navigation-container svg:first-child:hover {
+    transform: translate(-5px) scale(1.1);
+}
+
+.navigation-container svg:last-child:hover {
+    transform: translate(5px) scale(1.1);
+}
