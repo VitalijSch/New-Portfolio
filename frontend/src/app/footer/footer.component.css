@@ -1,0 +1,129 @@
+.footer-background-container {
+    background-color: #1C1C1C;
+}
+
+.footer-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 96px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Karla';
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    left: -15px;
+    z-index: 10000;
+}
+
+.top-container span:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.top-container span:last-child {
+    font-size: 35px;
+    line-height: 35px;
+    color: white;
+    -webkit-text-stroke: 1px white;
+}
+
+.top-container span:first-child,
+.top-container span:first-child span {
+    font-size: 50px;
+    color: #3DCFB6;
+    -webkit-text-stroke: 1px #3DCFB6;
+    transform: rotate(90deg);
+}
+
+.top-container span:first-child span {
+    height: unset !important;
+    width: 33px;
+    display: inline-block;
+    transform: rotate(90deg) !important;
+    cursor: pointer;
+}
+
+.top-container span:first-child,
+.top-container span:first-child span,
+.top-container span:last-child {
+    font-weight: 900;
+    transition: color 0.5s ease;
+}
+
+.top-container:hover span:first-child,
+.top-container:hover span:last-child,
+.top-container:hover span:first-child span {
+    color: transparent;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bottom-container span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+.copyright {
+    font-family: 'Fira Code';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: #3DCFB6;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.a-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.circle-container {
+    width: 6.4px;
+    height: 6.4px;
+    border-radius: 50%;
+    background-color: #3DCFB6;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.a-container:hover .circle-container {
+    opacity: 1;
+}
+
+.a-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+.a-container:hover a {
+    color: #3DCFB6;
+}

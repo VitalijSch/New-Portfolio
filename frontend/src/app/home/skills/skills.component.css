@@ -1,0 +1,185 @@
+.skills-background-container {
+    background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, #152a26 0%, #152a26 60%, #1C1C1C 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 96px 0 96px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.left-container .header {
+    font-family: 'Karla';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.06px;
+    color: #3DCFB6;
+}
+
+.description-container {
+    max-width: 520px;
+    width: 100%;
+    padding: 32px;
+    background-color: #3DCFB61A;
+    border: 1px solid #3DCFB6;
+    border-radius: 30px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+}
+
+.description-container h2 {
+    font-family: 'Fira Code';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: #3DCFB6;
+    margin-bottom: 40px;
+}
+
+.description-container p {
+    font-family: 'Karla';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+}
+
+.description-container .text-style {
+    font-family: 'Fire Code';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    margin-bottom: 16px;
+    color: white !important;
+}
+
+.description-container span span {
+    color: #3DCFB6 !important;
+}
+
+.m-b-32 {
+    margin-bottom: 32px;
+}
+
+.right-container {
+    max-width: 632px;
+    width: 100%;
+    margin-top: 48.06px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 116px);
+    align-items: center;
+    gap: 40px 54px;
+    position: relative;
+}
+
+.technology-container {
+    width: 104px;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.technology-container img {
+    transition: transform 0.4s ease;
+}
+
+.technology-container:hover img {
+    transform: scale(1.2);
+}
+
+.technology-container span {
+    font-family: 'Fira Code';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: white;
+    text-align: center;
+    cursor: default;
+    transition: color 0.4s ease;
+}
+
+.technology-container:hover .change-color {
+    color: #3DCFB6;
+}
+
+.growth-mindset-container {
+    position: absolute;
+    top: -99%;
+    left: 9px;
+    width: 188px;
+    border-radius: 16px;
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    pointer-events: none; 
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.technology-container:hover .growth-mindset-container {
+    opacity: 1;
+}
+
+.growth-mindset-container p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.7px;
+    color: #3DCFB6;
+    text-align: center;
+}
+
+.programming-languages-container {
+    display: flex;
+    gap: 16px;
+    position: relative;
+}
+
+.programming-languages-container:after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: -15px;
+    width: 26px;
+    height: 17px;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.language-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.language-container span {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12.96px;
+    color: #3DCFB6;
+}
