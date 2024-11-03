@@ -33,7 +33,7 @@ header {
     border-radius: 100px;
     transition: border-color 0.3s ease;
     position: relative;
-    z-index: 10000;
+    z-index: 10;
 }
 
 .language-container:hover {
@@ -70,6 +70,7 @@ header {
     font-size: 20px;
     line-height: 26.24px;
     position: relative;
+    z-index: 10;
     cursor: pointer;
 }
 
@@ -102,7 +103,7 @@ header {
     align-items: center;
     cursor: pointer;
     position: relative;
-    z-index: 10000;
+    z-index: 10;
 }
 
 .right-container span:first-child {

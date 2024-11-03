@@ -4,24 +4,17 @@
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 9;
 }
 
 .mouse-animation {
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     background: #3DCFB680;
     filter: blur(90px);
     position: absolute;
     transform: translate(-50%, -50%);
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 9998;
-    pointer-events: auto;
+    z-index: -1;
+    pointer-events: none;
 }

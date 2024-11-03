@@ -38,7 +38,6 @@
     background-color: #3DCFB61A;
     border: 1px solid #3DCFB6;
     border-radius: 30px;
-    backdrop-filter: blur(4px);
     display: flex;
     flex-direction: column;
 }
@@ -85,7 +84,6 @@
     grid-template-rows: repeat(3, 116px);
     align-items: center;
     gap: 40px 54px;
-    position: relative;
 }
 
 .technology-container {
@@ -96,6 +94,7 @@
     align-items: center;
     gap: 8px;
     position: relative;
+    z-index: 10;
 }
 
 .technology-container img {

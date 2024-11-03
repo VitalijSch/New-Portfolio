@@ -29,7 +29,7 @@
     height: 100%;
     border-radius: 30px;
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 .diagonal-stripes {
@@ -72,7 +72,6 @@
     background-color: #3DCFB61A;
     border: 1px solid #3DCFB6;
     border-radius: 30px;
-    backdrop-filter: blur(4px);
     display: flex;
     flex-direction: column;
 }
@@ -91,6 +90,8 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21.6px;
+    position: relative;
+    z-index: 10;
 }
 
 .m-b-32 {

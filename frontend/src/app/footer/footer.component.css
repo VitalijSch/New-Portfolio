@@ -27,7 +27,7 @@
     cursor: pointer;
     position: relative;
     left: -15px;
-    z-index: 10000;
+    z-index: 10;
 }
 
 .top-container span:first-child {
@@ -123,6 +123,8 @@
     font-weight: 400;
     line-height: 19.2px;
     cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .a-container:hover a {

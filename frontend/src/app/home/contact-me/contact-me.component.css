@@ -80,6 +80,8 @@ form {
     border-bottom: 1px solid #3DCFB680;
     cursor: pointer;
     transition: border-color 0.5s ease;
+    position: relative;
+    z-index: 10;
 }
 
 .input-container:hover {
@@ -142,6 +144,8 @@ form {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .privacy-policy-container .checkbox:hover {
@@ -160,6 +164,8 @@ form {
 .privacy-policy-container span {
     color: #3DCFB6;
     cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .privacy-policy-container span:hover {
@@ -187,6 +193,8 @@ form button {
     background-color: transparent;
     align-self: center;
     cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 form button span {
