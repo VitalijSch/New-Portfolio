@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ScrollService } from '../services/scroll/scroll.service';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './privacy-policy.component.css'
 })
 export class PrivacyPolicyComponent {
+  private scrollService: ScrollService = inject(ScrollService);
 
+  public ngOnInit(): void {
+    this.scrollService.scrollTo('header');
+  }
 }

@@ -13,6 +13,7 @@ import { NavigateService } from '../../services/navigate/navigate.service';
   styleUrl: './contact-me.component.css'
 })
 export class ContactMeComponent {
+  public messageSend: boolean = false;
   public isChecked: boolean = false;
   public showIsCheckedError: boolean = false;
   public messageForm: FormGroup;
@@ -46,7 +47,7 @@ export class ContactMeComponent {
   }
 
   public sendMessage(): void {
-    if (!this.isChecked) {
+    if (this.messageForm.valid && !this.isChecked) {
       this.showIsCheckedError = true;
     }
     if (this.messageForm.valid && this.isChecked) {
@@ -61,11 +62,21 @@ export class ContactMeComponent {
         next: (response) => {
           this.messageForm.reset();
           this.isChecked = false;
+          this.showMessage();
         },
         error: (error) => {
           console.error(error);
         },
       });
+  }
+
+  private showMessage(): void {
+    this.messageSend = true;
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      document.body.style.overflow = 'unset';
+      this.messageSend = false;
+    }, 3000);
   }
 
   public toggleIsChecked(): void {

@@ -1,7 +1,8 @@
 <section class="footer-background-container">
-    <div class="footer-container">
+    <div [ngStyle]="{'padding': router.url.includes('imprint') || router.url.includes('privacy-policy') ? '20px 96px 20px 96px' : ''}"
+        class="footer-container">
         <div class="left-container">
-            <div (click)="scrollService.scrollTo('hero')" class="top-container">
+            <div (click)="scrollService.scrollTo('header')" class="top-container">
                 <span><span>V</span>S</span>
                 <span>Vitalij<br>Schwab</span>
             </div>
@@ -26,7 +27,7 @@
             </div>
             <div class="a-container">
                 <div class="circle-container"></div>
-                <a (click)="navigateService.navigateTo('legal-notice')">Legal Notice</a>
+                <a (click)="navigateService.navigateTo('imprint')">Imprint</a>
             </div>
         </div>
     </div>
