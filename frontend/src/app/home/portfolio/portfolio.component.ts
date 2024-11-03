@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProjectComponent } from "./project/project.component";
 import { PortfolioService } from '../../services/portfolio/portfolio.service';
+import { ProjectComponent } from './project/project.component';
 import { ReferencesComponent } from './references/references.component';
 
 

@@ -8,6 +8,10 @@ body {
     height: 100vh;
 }
 
+body::-webkit-scrollbar {
+    width: 0;
+}
+
 .button-container {
     display: flex;
     align-items: center;

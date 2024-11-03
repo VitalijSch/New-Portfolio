@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ScrollService } from '../services/scroll/scroll.service';
+import { NavigateService } from '../services/navigate/navigate.service';
 
 @Component({
   selector: 'app-footer',
@@ -10,4 +11,5 @@ import { ScrollService } from '../services/scroll/scroll.service';
 })
 export class FooterComponent {
   public scrollService: ScrollService = inject(ScrollService);
+  public navigateService: NavigateService = inject(NavigateService);
 }
