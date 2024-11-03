@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Review } from '../../../interfaces/review';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../../services/translation/translation.service';
 
 @Component({
   selector: 'app-references',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './references.component.html',
   styleUrl: './references.component.css'
 })
@@ -16,18 +18,20 @@ export class ReferencesComponent {
   public nextTranslate: string = 'translateX(0)';
   public reviews: Review[] = [
     {
-      text: 'Du hast während deiner Umschulung gezeigt, wie gut du im Team arbeitest. Deine Ideen für die Frontend-Struktur haben unser Projekt effizienter gemacht, und du warst immer bereit, Feedback anzunehmen und Verbesserungen umzusetzen. Die Zusammenarbeit mit dir hat unser Team enorm vorangebracht!',
+      text: 'projects.content0',
       from: 'Bogdan G.'
     },
     {
-      text: 'Dein Einsatz in unserem Projekt war eine echte Bereicherung. Du hast nicht nur deine Aufgaben super gemeistert, sondern auch anderen geholfen, ihre Module optimal ins Gesamtsystem einzufügen. Deine Bereitschaft, Wissen zu teilen und zu unterstützen, hat die Teamarbeit echt gestärkt.',
+      text: 'projects.content1',
       from: 'Dennis B.'
     },
     {
-      text: 'Deine Hilfsbereitschaft und dein Engagement sind mir besonders aufgefallen. Du hast es geschafft, auch komplexe Themen verständlich zu erklären und anderen im Team zu helfen, wenn sie nicht weiterkamen. Deine offene Art und deine technischen Kenntnisse haben eine echte Teamkultur geschaffen.',
+      text: 'projects.content2',
       from: 'Benedikt M.'
     },
   ];
+
+  public translationService: TranslationService = inject(TranslationService);
 
   public next(): void {
     this.currentIndex = (this.currentIndex + 1) % this.reviews.length;

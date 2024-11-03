@@ -1,10 +1,8 @@
 <section class="portfolio-background-container">
     <div class="portfolio-container">
         <span>Portfolio</span>
-        <h2>Featured Projects</h2>
-        <p>
-            Explore a selection of my work here - interact with projects to see my skills in action.
-        </p>
+        <h2>{{'projects.header' | translate}}</h2>
+        <p>{{'projects.description' | translate}}</p>
         @for (project of portfolioService.projects; track $index; let first = $first; ;let last = $last) {
         <div (click)="portfolioService.selectCurrentProject(project)" [class.border-bottom]="last"
             class="project-container">

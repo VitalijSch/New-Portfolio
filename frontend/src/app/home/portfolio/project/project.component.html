@@ -2,11 +2,11 @@
     <div (click)="$event.stopPropagation()" class="project-container">
         <div class="left-container">
             <h2>{{getProjectNumber()}}</h2>
-            <span class="title">{{portfolioService.currentProject?.title}}</span>
-            <span class="description-headline">What is this project about?</span>
-            <p>{{portfolioService.currentProject?.description}}</p>
+            <span class="title">{{portfolioService.currentProject.title}}</span>
+            <span class="description-headline">{{'projects.text0' | translate}}</span>
+            <p>{{portfolioService.currentProject.description | translate}}</p>
             <div class="languages-container">
-                @for (language of portfolioService.currentProject?.languages; track $index; let last = $last) {
+                @for (language of portfolioService.currentProject.languages; track $index; let last = $last) {
                 @if(language == 'Api') {
                 <svg width="24" height="24" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -26,7 +26,7 @@
                 }
             </div>
             <div class="buttons-container">
-                <a href="{{portfolioService.currentProject?.gitHub}}" target="_blank">
+                <a href="{{portfolioService.currentProject.gitHub}}" target="_blank">
                     <button>
                         GitHub
                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +36,7 @@
                         </svg>
                     </button>
                 </a>
-                <a href="{{portfolioService.currentProject?.url}}" target="_blank">
+                <a href="{{portfolioService.currentProject.url}}" target="_blank">
                     <button>
                         Live Test
                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +63,7 @@
             </svg>
             <img src="./assets/images/projects/project_{{getIndexOfProject()}}.svg" alt="project">
             <span (click)="nextProject()" class="next-project">
-                Next project
+                {{'projects.text1' | translate}}
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_19313_206" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32"
                         height="32">

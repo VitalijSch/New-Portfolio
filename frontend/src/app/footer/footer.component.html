@@ -7,8 +7,8 @@
                 <span>Vitalij<br>Schwab</span>
             </div>
             <div class="bottom-container">
-                <span>Web Developer</span>
-                <span>Lahr/Schwarzwald Germany</span>
+                <span>{{'footer.label' | translate}}</span>
+                <span>Lahr/Schwarzwald {{'footer.country' | translate}}</span>
             </div>
         </div>
         <span class="copyright">© Vitalij Schwab 2024</span>
@@ -23,11 +23,11 @@
             </div>
             <div class="a-container">
                 <div class="circle-container"></div>
-                <a href="mailto:schwab.vitalij@gmail.com">Email</a>
+                <a href="mailto:schwab.vitalij@gmail.com">{{'footer.email' | translate}}</a>
             </div>
             <div class="a-container">
                 <div class="circle-container"></div>
-                <a (click)="navigateService.navigateTo('imprint')">Imprint</a>
+                <a (click)="navigateService.navigateTo('imprint')">{{'footer.imprint' | translate}}</a>
             </div>
         </div>
     </div>

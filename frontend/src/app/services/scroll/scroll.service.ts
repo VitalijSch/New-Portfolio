@@ -8,7 +8,7 @@ export class ScrollService {
   private router: Router = inject(Router);
 
   public async scrollTo(id: string): Promise<void> {
-    if ((id === 'abouteMe' || id === 'skills' || id === 'portfolio') &&
+    if ((id === 'aboutMe' || id === 'skills' || id === 'portfolio') &&
       (this.router.url.includes('imprint') || this.router.url.includes('privacy-policy'))) {
       await this.router.navigate(['']);
     }

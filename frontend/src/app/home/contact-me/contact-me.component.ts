@@ -4,11 +4,14 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { HttpClient } from '@angular/common/http';
 import { Post } from '../../interfaces/post';
 import { NavigateService } from '../../services/navigate/navigate.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../services/translation/translation.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, TranslateModule],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.css'
 })
@@ -30,6 +33,8 @@ export class ContactMeComponent {
   };
 
   public navigateService: NavigateService = inject(NavigateService);
+  public translationService: TranslationService = inject(TranslationService);
+  private translate: TranslateService = inject(TranslateService);
 
   private fb: FormBuilder = inject(FormBuilder);
   private http: HttpClient = inject(HttpClient);
@@ -84,5 +89,26 @@ export class ContactMeComponent {
     if (this.isChecked) {
       this.showIsCheckedError = false;
     }
+  }
+
+  get placeholderName(): string {
+    if (this.messageForm.get('name')?.invalid && this.messageForm.get('name')?.touched) {
+      return this.translate.instant('contactMe.errorMessageName');
+    }
+    return this.translate.instant('contactMe.placeholder0');
+  }
+
+  get placeholderEmail(): string {
+    if (this.messageForm.get('email')?.invalid && this.messageForm.get('email')?.touched) {
+      return this.translate.instant('contactMe.errorMessageEmail');
+    }
+    return 'youremail@email.com';
+  }
+
+  get placeholderMessage(): string {
+    if (this.messageForm.get('message')?.invalid && this.messageForm.get('message')?.touched) {
+      return this.translate.instant('contactMe.errorMessageMessage');
+    }
+    return this.translate.instant('contactMe.placeholder1');
   }
 }

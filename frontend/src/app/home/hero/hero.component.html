@@ -11,11 +11,11 @@
             <div class="line-container"></div>
         </div>
         <div class="center-container">
-            <span class="submain-header">Frontend Developer</span>
+            <span class="submain-header">{{'hero.label' | translate}}</span>
             <h1>Vitalij Schwab</h1>
             <div class="button-container">
-                <button (click)="scrollService.scrollTo('portfolio')"><span>Check my work</span></button>
-                <button (click)="scrollService.scrollTo('contactMe')"><span>Contact me</span></button>
+                <button (click)="scrollService.scrollTo('portfolio')"><span>{{'hero.leftButton' | translate}}</span></button>
+                <button (click)="scrollService.scrollTo('contactMe')"><span>{{'hero.rightButton' | translate}}</span></button>
             </div>
         </div>
         <div class="right-container">
@@ -50,7 +50,7 @@
                 <div class="slider-track">
                     @for (content of sliderContent; track $index; let last = $last) {
                     <div class="circle-container"></div>
-                    <span [ngStyle]="{'padding-right': last ? '28px' : '0'}">{{content}}</span>
+                    <span [ngStyle]="{'padding-right': last ? '28px' : '0'}">{{content | translate}}</span>
                     }
                 </div>
             </ngx-fast-marquee>

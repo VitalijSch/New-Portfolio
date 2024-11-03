@@ -1,56 +1,80 @@
 {
     "header": {
         "aboutMe": "Über mich",
-        "skillSet": "Fähigkeiten",
-        "myWork": "Meine Arbeit",
-        "contact": "Kontakt"
+        "skills": "Fähigkeiten",
+        "projects": "Projekte"
     },
-    "aboveTheFold": {
-        "headerName": "Hallo! Ich bin Vitalij",
-        "headerTitle": "FRONTEND ENTWICKLER"
+    "hero": {
+        "label": "Frontend Entwickler",
+        "leftButton": "Überprüfe meine Arbeit",
+        "rightButton": "Kontaktiere mich",
+        "profileSummary0": "Verfügbar für Remote Arbeit",
+        "profileSummary1": "Frontend Entwickler",
+        "profileSummary2": "Wohnhaft in Lahr/Schwarzwald",
+        "profileSummary3": "Offen für neue Herausforderungen"
     },
     "aboutMe": {
-        "header": "Lasst uns <br> zusammenarbeiten",
-        "description": "Ich bin ein Front-End-Entwickler mit Sitz in Lahr/Schwarzwald. Mir macht es Freude, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Entwicklerkarriere mit einer Stelle als Junior-Webentwickler fortzusetzen. <br><br> Wenn Sie denken, dass ich gut zu Ihren Projekten passen könnte, kontaktieren Sie mich bitte!",
-        "button": "Nachricht senden"
+        "subHeader": "Wer ich bin",
+        "header": "Über mich",
+        "description": "Hallo, mein Name ist Vitalij, und ich bin 30 Jahre alt. Ich bin Frontend-Entwickler und lebe in Lahr/Schwarzwald. Motiviert durch die unbegrenzten Möglichkeiten in der IT freue ich mich darauf, visuell ansprechende und intuitive Websites und Anwendungen zu erstellen.",
+        "skill1": "Ich bin flexibel in Bezug auf mein Arbeitsumfeld und kann sowohl vor Ort in Lahr/Schwarzwald als auch remote effektiv arbeiten.",
+        "skill2": "Ich bin aufgeschlossen und freue mich darauf, neue Herausforderungen anzunehmen, um mein Wissen und meine Fähigkeiten ständig zu erweitern.",
+        "skill3": "Ich betrachte das Design von Webanwendungen als mehr als nur Programmierung; es ist ein kreativer Ansatz zur Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in ansprechende, benutzerfreundliche Lösungen zu verwandeln. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
     },
     "skillSet": {
-        "header": "Fähigkeiten"
+        "subHeader": "Technologien",
+        "header": "Fähigkeiten",
+        "description": "Während meiner Zeit an der Developer Academy habe ich umfassende Kenntnisse erworben und gelernt, eine Vielzahl von Front-End-Technologien und -Konzepten zu nutzen. Ich beherrsche mehrere Programmiersprachen und bin sicher im Umgang mit verschiedenen Datenbanken.",
+        "text0": "Habe ich Ihr",
+        "text1": "Interesse geweckt?",
+        "text2": "Bitte zögere nicht, mich zu kontaktieren. Ich freue mich darauf, beizutragen und mein Wissen zu erweitern.",
+        "button": "Lass uns sprechen",
+        "text3": "Ich habe ein besonderes Interesse am Lernen.",
+        "skill": "Offen für Wachstum"
     },
-    "myWork": {
-        "header": "Meine Arbeit",
-        "description": "Erkunden Sie hier eine Auswahl meiner Arbeit - interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "projects": {
+        "header": "Ausgewählte Projekte",
+        "description": "Erforschen Sie hier eine Auswahl meiner Arbeiten – interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+        "text0": "Worum geht es in diesem Projekt?",
         "daBubble": "Eine Chat-Messenger-App, die von Slack oder Discord inspiriert ist und es Benutzern ermöglicht, sich in Kanälen oder per Direktnachricht miteinander zu verbinden.",
         "join": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
         "elPolloLoco": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
-        "pokedex": "Basiert auf der PokéAPI, eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
+        "pokedex": "Basiert auf der PokéAPI, eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
+        "text1": "Nächstes Projekt",
+        "sliderHeader": "Was meine Kollegen über mich sagen",
+        "content0": "Während deiner Umschulung hast du super im Team gearbeitet. Deine Ideen fürs Frontend haben unser Projekt echt vorangebracht, und du warst immer offen für Feedback und neue Ansätze. Die Zusammenarbeit mit dir hat uns richtig weitergeholfen!",
+        "content1": "Dein Beitrag zu unserem Projekt war echt super! Du hast nicht nur deine Aufgaben klasse gemacht, sondern auch anderen geholfen, ihre Teile ins System einzufügen. Deine Offenheit, Wissen zu teilen und zu unterstützen, hat unser Team echt weitergebracht.",
+        "content2": "Deine Hilfsbereitschaft und dein Engagement haben echt Eindruck gemacht. Du konntest komplexe Themen super verständlich erklären und warst immer zur Stelle, wenn jemand im Team feststeckte. Deine offene Art und dein Wissen haben uns richtig gut zusammengebracht."
     },
-    "contact": {
-        "header": "Kontakt",
-        "subHeader": "Hast du ein Problem zu lösen?",
+    "contactMe": {
+        "subHeader": "Kontaktieren Sie mich",
+        "header": "Lass uns zusammenarbeiten",
+        "text0": "Hast du ein Problem zu lösen?",
         "description": "Kontaktiere mich über dieses Formular. Ich freue mich darauf, von dir zu hören, deine Ideen kennenzulernen und mit meiner Arbeit zu deinen Projekten beizutragen.",
-        "text": "Brauchst du einen Frontend-Entwickler?",
-        "smallText": " Kontaktiere mich!",
-        "yourName": "Dein Name",
-        "errorMessageName": "Dein Name ist erforderlich",
-        "email": "Deine E-Mail",
-        "errorMessageEmal": "Deine E-Mail ist erforderlich",
-        "message": "Deine Nachricht",
-        "errorMessageMessage": "Deine Nachricht ist erforderlich",
+        "text1": "Brauchst du einen Frontend-Entwickler?",
+        "smallText0": "Lass uns reden!",
+        "yourName": "Wie heißt du?",
+        "placeholder0": "Dein Name kommt hier hin",
+        "errorMessageName": "Ups! Es scheint, als fehle dein Name",
+        "email": "Wie lautet deine E-Mail?",
+        "errorMessageEmail": "Hoppla! Deine E-Mail wird benötigt",
+        "message": "Wie kann ich dir helfen?",
+        "placeholder1": "Hallo Vitalij, ich bin interessiert an...",
+        "errorMessageMessage": "Was benötigen Sie zur Entwicklung?",
         "firstSpan": "Ich habe die",
         "privacyPolicy": "Datenschutzrichtlinien",
         "secondSpan": "gelesen und stimme der Verarbeitung meiner Daten zu.",
-        "errorMessagePrivacyPolicy": "Bitte akzeptiere die Datenschutzrichtlinien.",
-        "button": "Hallo ;)",
-        "successfullyMessage": "Vielen Dank!<br> Deine Nachricht wurde erfolgreich gesendet."
+        "errorMessagePrivacyPolicy": "Sie müssen den Bedingungen und der Richtlinie zustimmen",
+        "button": "Sag Hallo ;)",
+        "successfullyMessage": "Vielen Dank!<br> Deine Nachricht wurde<br> erfolgreich gesendet."
     },
     "footer": {
+        "label": "Webentwickler",
+        "country": "Deutschland",
+        "email": "E-Mail",
         "imprint": "Impressum"
     },
     "imprint": {
-        "imprint": "Impressum",
-        "contact": "Kontakt",
-        "phone": "Telefon",
-        "source": "Quelle"
+        "imprint": "Impressum"
     }
 }

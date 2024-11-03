@@ -1,20 +1,14 @@
 <section class="skills-background-container">
     <div class="skills-container">
         <div class="left-container">
-            <span class="header">Technologies</span>
+            <span class="header">{{'skillSet.subHeader' | translate}}</span>
             <div class="description-container">
-                <h2>Skill Set</h2>
-                <p class="m-b-32">
-                    During my time at the Developer Academy, I acquired comprehensive knowledge and learned to use a
-                    range of front-end technologies and concepts. I have a strong command of multiple programming
-                    languages and am confident in working with different databases.
-                </p>
-                <span class="text-style">Have I piqued <span>your interest?</span></span>
-                <p class="m-b-32">
-                    Please feel free to contact me. I look forward to contributing and expanding my knowledge.
-                </p>
+                <h2>{{'skillSet.header' | translate}}</h2>
+                <p class="m-b-32">{{'skillSet.description' | translate}}</p>
+                <span class="text-style">{{'skillSet.text0' | translate}} <span>{{'skillSet.text1' | translate}}</span></span>
+                <p class="m-b-32">{{'skillSet.text2' | translate}}</p>
                 <div class="button-container">
-                    <button (click)="scrollService.scrollTo('contactMe')"><span>Let's Talk</span></button>
+                    <button (click)="scrollService.scrollTo('contactMe')"><span>{{'skillSet.button' | translate}}</span></button>
                 </div>
             </div>
         </div>
@@ -22,12 +16,10 @@
             @for (technology of technologies; track $index; let last = $last) {
             <div class="technology-container">
                 <img src="./assets/images/technologies/technologies_{{$index}}.svg" alt="technology">
-                <span [class.change-color]="last">{{technology}}</span>
+                <span [class.change-color]="last">{{technology | translate}}</span>
                 @if(last) {
                 <div class="growth-mindset-container">
-                    <p>
-                        I have a special interest in learning
-                    </p>
+                    <p>{{'skillSet.text3' | translate}}</p>
                     <div class="programming-languages-container">
                         <div class="language-container">
                             <svg width="32" height="32" viewBox="0 0 60 60" fill="none"
