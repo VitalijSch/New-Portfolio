@@ -5,6 +5,7 @@
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,4 +170,144 @@
 
 .next-project:hover svg {
     transform: translate(5px) scale(1.1);
+}
+
+@media(max-width: 1200px) {
+    .project-container {
+        padding-bottom: 70px;
+        width: unset;
+        max-height: 1080px;
+        height: fit-content;
+        flex-direction: column-reverse;
+        justify-content: unset;
+        gap: 20px;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .next-project {
+        position: absolute;
+        right: 64px;
+        bottom: 30px;
+    }
+
+    .left-container {
+        gap: 20px;
+    }
+
+    .right-container {
+        width: 100%;
+    }
+}
+
+@media(max-width: 700px) {
+    .project-container {
+        padding: 56px 12px 70px 12px;
+    }
+
+    .next-project {
+        position: absolute;
+        font-size: 14px;
+        line-height: 14px;
+        right: 12px;
+        bottom: 20px;
+    }
+
+    .right-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+
+    .left-container h2 {
+        font-size: 72px;
+        line-height: 72px;
+    }
+
+    .title {
+        font-size: 56px;
+        line-height: 44.8px;
+    }
+
+    .description-headline {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .left-container p {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+
+    .languages-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .buttons-container button {
+        padding: 12px;
+        gap: 10px;
+    }
+}
+
+@media(max-height: 1050px) and (max-width: 1200px) {
+    .left-container h2 {
+        font-size: 30px;
+        line-height: 29px;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 29px;
+    }
+
+    .description-headline {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .next-project {
+        bottom: 5px;
+    }
+}
+
+@media(max-height: 900px) and (max-width: 1200px) {
+    .right-container {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .close {
+        align-self: flex-end;
+    }
+
+    .right-container img {
+        width: 320px;
+    }
+
+    .left-container {
+        gap: 10px;
+    }
+}
+
+@media(max-height: 680px) and (max-width: 1200px) {
+    .project-container {
+        gap: 0;
+    }
+
+    .right-container img {
+        display: none;
+    }
+}
+
+@media(max-height: 450px) and (max-width: 1200px) {
+    .project-container {
+        padding-top: 10px;
+    }
+}
+
+@media(max-height: 400px) and (max-width: 1200px) {
+    .project-container {
+        padding: 5px 64px;
+    }
 }

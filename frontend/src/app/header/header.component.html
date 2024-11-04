@@ -17,5 +17,27 @@
             <span><span>V</span>S</span>
             <span>Vitalij<br>Schwab</span>
         </div>
+        <div (click)="toggleOpenNav()" class="burger-menu-container">
+            <div class="line-container"></div>
+            <div class="line-container"></div>
+            <div class="line-container"></div>
+        </div>
+        @if(openNav) {
+        <div (click)="toggleOpenNav()" class="nav-background-container">
+            <div (click)="$event.stopPropagation()" class="nav-container">
+                <span (click)="handleNav('aboutMe')">{{'header.aboutMe' | translate}}</span>
+                <span (click)="handleNav('skills')">{{'header.skills' | translate}}</span>
+                <span (click)="handleNav('portfolio')">{{'header.projects' | translate}}</span>
+                <div (click)="switchLanguage()" class="language-container">
+                    <div [ngStyle]="{'padding-right': toggleLanguage ? '12px' : '8px'}"
+                        [ngClass]="{'active-language': toggleLanguage}" class="en-container language">EN
+                    </div>
+                    <div [ngStyle]="{'padding-left': !toggleLanguage ? '12px' : '8px'}"
+                        [ngClass]="{'active-language': !toggleLanguage}" class="de-container language">DE
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
     </header>
 </div>

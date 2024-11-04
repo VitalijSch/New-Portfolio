@@ -134,7 +134,7 @@
     align-items: center;
     gap: 8px;
     box-shadow: 0px 4px 4px 0px #00000040;
-    pointer-events: none; 
+    pointer-events: none;
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -181,4 +181,93 @@
     font-size: 12px;
     line-height: 12.96px;
     color: #3DCFB6;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@media(max-width: 1320px) {
+    .skills-container {
+        gap: 20px;
+    }
+}
+
+@media(max-width: 1270px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .right-container {
+        align-self: flex-end;
+        max-width: 520px;
+        gap: 40px 25px;
+    }
+}
+
+@media(max-width: 850px), (max-height: 800px) {
+    .skills-container {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .left-container {
+        align-self: center;
+    }
+
+    .right-container {
+        align-self: center;
+    }
+
+    .right-container span {
+        line-height: 21.04px;
+    }
+
+    .description-container h2 {
+        font-size: 56px;
+        line-height: 44.8pxpx;
+    }
+
+    .description-container p {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+
+    .technology-container img {
+        animation: pulse 3s infinite;
+    }
+
+    @media(max-width: 550px) {
+        .right-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .technology-container {
+            width: unset;
+        }
+
+        .description-container h2 {
+            font-size: 35px;
+        }
+    }
+
+    @media(max-width: 420px) {
+        .skills-container {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .right-container {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px 25px;
+        }
+    }
 }

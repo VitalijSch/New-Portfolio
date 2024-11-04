@@ -14,10 +14,19 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   public toggleLanguage: boolean = false;
+  public openNav: boolean = false;
 
   public scrollService: ScrollService = inject(ScrollService);
   public translationService: TranslationService = inject(TranslationService);
   public navigateService: NavigateService = inject(NavigateService);
+
+  public ngOnInit(): void {
+    if (this.translationService.currentLanguage === 'en') {
+      this.toggleLanguage = true;
+    } else {
+      this.toggleLanguage = false;
+    }
+  }
 
   public switchLanguage(): void {
     this.toggleLanguage = !this.toggleLanguage;
@@ -26,5 +35,14 @@ export class HeaderComponent {
     } else {
       this.translationService.switchLanguage('de');
     }
+  }
+
+  public toggleOpenNav(): void {
+    this.openNav = !this.openNav;
+  }
+
+  public handleNav(id: string): void {
+    this.toggleOpenNav();
+    this.scrollService.scrollTo(id);
   }
 }

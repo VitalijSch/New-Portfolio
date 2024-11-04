@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Review } from '../../../interfaces/review';
 import { TranslateModule } from '@ngx-translate/core';
@@ -33,31 +33,49 @@ export class ReferencesComponent {
 
   public translationService: TranslationService = inject(TranslationService);
 
+  public ngOnInit(): void {
+    this.checkScreenWidth();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenWidth();
+  }
+
   public next(): void {
     this.currentIndex = (this.currentIndex + 1) % this.reviews.length;
-    this.updateSlides();
+    this.checkScreenWidth();
   }
 
   public prev(): void {
     this.currentIndex = (this.currentIndex - 1 + this.reviews.length) % this.reviews.length;
-    this.updateSlides();
+    this.checkScreenWidth();
   }
 
-  private updateSlides(): void {
-    if (this.currentIndex === 0) {
-      this.previousTranslate = 'translateX(684px)';
-      this.currentTranslate = 'translateX(684px)';
-      this.nextTranslate = 'translateX(-1368px)';
+  private checkScreenWidth(): void {
+    let baseOffset = this.getBaseOffset();
+    this.updateSlidesDynamic(baseOffset);
+  }
+  
+  private getBaseOffset(): number {
+    if (window.innerWidth <= 650) {
+      return 310;
+    } else if (window.innerWidth <= 1000) {
+      return 418;
+    } else {
+      return 684;
     }
-    if (this.currentIndex === 1) {
-      this.previousTranslate = 'translateX(0)';
-      this.currentTranslate = 'translateX(0)';
-      this.nextTranslate = 'translateX(0)';
-    }
-    if (this.currentIndex === 2) {
-      this.previousTranslate = 'translateX(1368px)';
-      this.currentTranslate = 'translateX(-684px)';
-      this.nextTranslate = 'translateX(-684px)';
-    }
+  }
+  
+  private updateSlidesDynamic(baseOffset: number): void {
+    const offsets = [
+      { previous: baseOffset, current: baseOffset, next: -2 * baseOffset },
+      { previous: 0, current: 0, next: 0 },
+      { previous: 2 * baseOffset, current: -baseOffset, next: -baseOffset },
+    ];
+    const currentOffset = offsets[this.currentIndex];
+    this.previousTranslate = `translateX(${currentOffset.previous}px)`;
+    this.currentTranslate = `translateX(${currentOffset.current}px)`;
+    this.nextTranslate = `translateX(${currentOffset.next}px)`;
   }
 }

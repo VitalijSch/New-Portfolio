@@ -16,18 +16,18 @@
     "aboutMe": {
         "subHeader": "Who I am",
         "header": "About Me",
-        "description": "Hello, my name is Vitalij, and I am 30 years old. I am a frontend developer living in Lahr/Schwarzwald. Motivated by the limitless possibilities within IT, I look forward to creating visually captivating and intuitive websites and applications.",
-        "skill1": "I am flexible regarding my work environment and can work effectively both on-site in Lahr/Schwarzwald and remotely.",
-        "skill2": "I am open-minded and enjoy facing new challenges to continually enhance my knowledge and skills.",
-        "skill3": "I view web application design as more than just programming; it is a creative approach to problem-solving. I take pride in my ability to transform complex technical challenges into appealing, user-friendly solutions. This is how I help you achieve your goals and bring your visions to life."
+        "description": "Hello, my name is Vitalij, and I am 30 years old. I am a frontend developer living in Lahr/Schwarzwald. Inspired by the limitless possibilities in IT, I look forward to creating engaging and user-friendly websites and applications.",
+        "skill1": "I am adaptable in my work environment and can work effectively both remotely and on-site.",
+        "skill2": "I am open to new experiences and look forward to taking on challenges to continuously expand my knowledge and skills.",
+        "skill3": "I view web design as a creative problem-solving process: I transform complex challenges into user-friendly, engaging solutions that support your goals and bring your visions to life."
     },
     "skillSet": {
         "subHeader": "Technologies",
         "header": "Skill Set",
-        "description": "During my time at the Developer Academy, I acquired comprehensive knowledge and learned to use a range of front-end technologies and concepts; I have a strong command of multiple programming languages and am confident in working with different databases.",
-        "text0": "Have I piqued",
-        "text1": "your interest?",
-        "text2": "Please feel free to contact me. I look forward to contributing and expanding my knowledge.",
+        "description": "My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to Continously enhance my skills and stay ahead in the ever-evolving landscape of web development.",
+        "text0": "You need",
+        "text1": "another skill?",
+        "text2": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
         "button": "Let's Talk",
         "text3": "I have a special interest in learning",
         "skill": "Growth mindset"
@@ -76,5 +76,8 @@
     },
     "imprint": {
         "imprint": "Imprint"
+    },
+    "landscape": {
+        "text": "Please rotate your device to continue."
     }
 }

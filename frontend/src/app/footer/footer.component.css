@@ -89,6 +89,8 @@
     font-weight: 400;
     line-height: 21.6px;
     color: #3DCFB6;
+    display: flex;
+    align-items: center;
 }
 
 .right-container {
@@ -129,4 +131,39 @@
 
 .a-container:hover a {
     color: #3DCFB6;
+}
+
+@media(max-width: 850px) {
+    .footer-container {
+        padding-right: 25px;
+        padding-left: 25px;
+        position: relative;
+    }
+
+    .copyright {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .right-container {
+        align-self: flex-start;
+    }
+}
+
+@media(max-width: 420px) {
+    .footer-container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .top-container span:last-child {
+        display: none;
+    }
+
+    .bottom-container {
+        width: 130px;
+    }
 }

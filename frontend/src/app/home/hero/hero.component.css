@@ -17,6 +17,7 @@
     grid-template-rows: 1fr;
     grid-template-areas:
         "left-container center-container right-container";
+    position: relative;
 }
 
 .left-container {
@@ -67,6 +68,7 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
+    text-align: center;
 }
 
 .center-container .submain-header {
@@ -113,6 +115,10 @@
 
 .rotate-wrapper a:hover {
     color: #3DCFB6;
+}
+
+.email-icon {
+    display: none;
 }
 
 .svg-container {
@@ -186,4 +192,96 @@
     line-height: 38.4px;
     color: #3DCFB6;
     white-space: nowrap;
+}
+
+@keyframes slide {
+    100% {
+        transform: translateX(-120%);
+    }
+}
+
+@media(max-width: 850px), (max-height: 800px) {
+    .hero-container {
+        padding: 0 25px;
+    }
+
+    .center-container .submain-header {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .center-container h1 {
+        font-size: 62px;
+    }
+
+    .rotate-wrapper {
+        display: none;
+    }
+
+    .email-icon {
+        display: unset;
+    }
+
+    .button-container {
+        gap: 24px;
+    }
+
+    .button-container button {
+        width: 143px;
+        height: 48px;
+        border-color: #3DCFB6;
+    }
+
+    .button-container button span {
+        color: #3DCFB6;
+        white-space: nowrap;
+        transform: translateX(120%);
+    }
+
+    .button-container button:first-child span {
+        animation: slide 4s infinite forwards;
+    }
+
+    .button-container button:last-child span {
+        animation: slide 4s infinite forwards;
+    }
+
+    .slider-container {
+        height: 52px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media(max-width: 420px) {
+    .hero-container {
+        padding: 0 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .svg-container .circle-container {
+        display: none;
+    }
+}
+
+@media(max-height: 414px) {
+
+    .left-container .line-container {
+        height: 140px;
+    }
+
+    .center-container {
+        gap: 0;
+    }
+
+    .right-container .line-container {
+        height: 99px;
+    }
+
+    .slider-container {
+        bottom: 20px;
+    }
 }

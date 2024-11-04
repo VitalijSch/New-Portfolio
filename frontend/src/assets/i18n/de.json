@@ -16,18 +16,18 @@
     "aboutMe": {
         "subHeader": "Wer ich bin",
         "header": "Über mich",
-        "description": "Hallo, mein Name ist Vitalij, und ich bin 30 Jahre alt. Ich bin Frontend-Entwickler und lebe in Lahr/Schwarzwald. Motiviert durch die unbegrenzten Möglichkeiten in der IT freue ich mich darauf, visuell ansprechende und intuitive Websites und Anwendungen zu erstellen.",
-        "skill1": "Ich bin flexibel in Bezug auf mein Arbeitsumfeld und kann sowohl vor Ort in Lahr/Schwarzwald als auch remote effektiv arbeiten.",
-        "skill2": "Ich bin aufgeschlossen und freue mich darauf, neue Herausforderungen anzunehmen, um mein Wissen und meine Fähigkeiten ständig zu erweitern.",
-        "skill3": "Ich betrachte das Design von Webanwendungen als mehr als nur Programmierung; es ist ein kreativer Ansatz zur Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in ansprechende, benutzerfreundliche Lösungen zu verwandeln. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+        "description": "Hallo, mein Name ist Vitalij, und ich bin 30 Jahre alt. Ich bin Frontend-Entwickler und lebe in Lahr/Schwarzwald. Inspiriert von den grenzenlosen Möglichkeiten der IT freue ich mich darauf, ansprechende und benutzerfreundliche Websites sowie Anwendungen zu gestalten.",
+        "skill1": "Ich bin anpassungsfähig in meinem Arbeitsumfeld und kann sowohl effektiv remote als auch vor Ort arbeiten.",
+        "skill2": "Ich bin offen für neue Erfahrungen und freue mich darauf, Herausforderungen anzunehmen, um mein Wissen und meine Fähigkeiten kontinuierlich auszubauen.",
+        "skill3": "Ich betrachte Webdesign als kreatives Problemlösen: Komplexe Herausforderungen wandle ich in benutzerfreundliche, ansprechende Lösungen um, die Ihre Ziele unterstützen und Visionen realisieren."
     },
     "skillSet": {
         "subHeader": "Technologien",
         "header": "Fähigkeiten",
-        "description": "Während meiner Zeit an der Developer Academy habe ich umfassende Kenntnisse erworben und gelernt, eine Vielzahl von Front-End-Technologien und -Konzepten zu nutzen. Ich beherrsche mehrere Programmiersprachen und bin sicher im Umgang mit verschiedenen Datenbanken.",
-        "text0": "Habe ich Ihr",
-        "text1": "Interesse geweckt?",
-        "text2": "Bitte zögere nicht, mich zu kontaktieren. Ich freue mich darauf, beizutragen und mein Wissen zu erweitern.",
+        "description": "Meine Reise umfasste die Arbeit an verschiedenen Projekten, bei denen ich eine Vielzahl von Frontend-Technologien und -Konzepten eingesetzt habe. Ich bin offen dafür, neue Technologien und Methoden zu übernehmen, um meine Fähigkeiten kontinuierlich zu verbessern und im ständig wandelnden Bereich der Webentwicklung einen Schritt voraus zu bleiben.",
+        "text0": "Brauchen Sie eine",
+        "text1": "weitere Fähigkeit?",
+        "text2": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein vorheriges Wissen zu erweitern.",
         "button": "Lass uns sprechen",
         "text3": "Ich habe ein besonderes Interesse am Lernen.",
         "skill": "Offen für Wachstum"
@@ -76,5 +76,8 @@
     },
     "imprint": {
         "imprint": "Impressum"
+    },
+    "landscape": {
+        "text": "Bitte drehen Sie Ihr Gerät, um fortzufahren."
     }
 }
