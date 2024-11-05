@@ -34,6 +34,10 @@ p {
     text-align: center;
 }
 
+a {
+    color: #3DCFB6;
+}
+
 @media(max-width: 850px) {
     .privacy-policy-container {
         padding-right: 25px;
