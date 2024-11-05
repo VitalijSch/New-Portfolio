@@ -9,7 +9,7 @@
     padding: 100px 96px 0 96px;
     color: white;
     display: flex;
-    justify-content: space-between;
+    gap: 64px;
 }
 
 .left-container {
@@ -137,8 +137,8 @@ form {
 }
 
 .privacy-policy-container .checkbox {
-    width: 16px;
-    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
     border: 2px solid #3DCFB6;
     display: flex;
     justify-content: center;
@@ -235,19 +235,14 @@ form .button-enabled:hover span {
     bottom: 0;
     left: 0;
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .message {
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    padding: 20px;
-    border: 1px solid #3DCFB6;
-    background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
     font-family: "Fira Code";
     font-weight: 700;
     font-size: 32px;
@@ -257,6 +252,7 @@ form .button-enabled:hover span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 20px;
     opacity: 0;
     transform: scale(0);
@@ -267,5 +263,60 @@ form .button-enabled:hover span {
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@media(max-width: 1270px) {
+    .contact-me-container {
+        flex-direction: column;
+    }
+
+    form {
+        align-self: flex-end;
+    }
+}
+
+@media(max-width: 850px) {
+    .contact-me-container {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .left-container .first-span {
+        font-size: 18px;
+        line-height: 21.04px;
+    }
+
+    .left-container h2 {
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    .left-container .second-span {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media(max-width: 550px) {
+    .left-container h2 {
+        font-size: 35px;
+        line-height: 35px;
+        word-wrap: break-word;
+    }
+}
+
+@media(max-width: 420px) {
+    .skills-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .input-container input {
+        font-size: 12px;
+    }
+
+    .privacy-policy-message-container {
+        margin-bottom: 60px;
     }
 }

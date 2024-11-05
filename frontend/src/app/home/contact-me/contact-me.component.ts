@@ -77,9 +77,9 @@ export class ContactMeComponent {
 
   private showMessage(): void {
     this.messageSend = true;
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflowY = 'hidden';
     setTimeout(() => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflowY = 'unset';
       this.messageSend = false;
     }, 3000);
   }

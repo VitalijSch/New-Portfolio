@@ -23,6 +23,7 @@ h1 {
     line-height: 64px;
     color: #3DCFB6;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 p {
@@ -31,4 +32,26 @@ p {
     font-size: 18px;
     line-height: 28px;
     text-align: center;
+}
+
+@media(max-width: 850px) {
+    .privacy-policy-container {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 420px) {
+    .privacy-policy-container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    a {
+        font-size: 14px;
+    }
 }

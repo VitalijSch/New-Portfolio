@@ -66,7 +66,7 @@
         "secondSpan": "and agree to the processing of my data as outlined.",
         "errorMessagePrivacyPolicy": "You must agree to the terms & policy",
         "button": "Say hello ;)",
-        "successfullyMessage": "Thank you very much!<br> Your message has been<br> successfully submitted."
+        "successfullyMessage": "Thank you very much! Your message has been successfully submitted."
     },
     "footer": {
         "label": "Web Developer",

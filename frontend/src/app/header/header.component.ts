@@ -39,6 +39,11 @@ export class HeaderComponent {
 
   public toggleOpenNav(): void {
     this.openNav = !this.openNav;
+    if (this.openNav) {
+      document.body.style.overflowY = 'hidden';
+    } else {
+      document.body.style.overflowY = 'unset';
+    }
   }
 
   public handleNav(id: string): void {

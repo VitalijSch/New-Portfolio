@@ -66,7 +66,7 @@
         "secondSpan": "gelesen und stimme der Verarbeitung meiner Daten zu.",
         "errorMessagePrivacyPolicy": "Sie müssen den Bedingungen und der Richtlinie zustimmen",
         "button": "Sag Hallo ;)",
-        "successfullyMessage": "Vielen Dank!<br> Deine Nachricht wurde<br> erfolgreich gesendet."
+        "successfullyMessage": "Vielen Dank! Deine Nachricht wurde erfolgreich gesendet."
     },
     "footer": {
         "label": "Webentwickler",
